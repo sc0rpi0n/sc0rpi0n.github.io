@@ -1,0 +1,691 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Mr. Saroj Ligal</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="15470a82-496c-808f-99c6-e6f921b673e2" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="Mr%20Saroj%20Ligal%2015470a82496c808f99c6e6f921b673e2/1713161433398.jpeg"/></div><h1 class="page-title">Mr. Saroj Ligal</h1><p class="page-description"></p></header><div class="page-body"><h3 id="15470a82-496c-817a-84de-c0ae21d6aed6" class="block-color-gray">Engineering Manager | System Architect | Technical Lead | FullStack Developer | Cyber Security Practitioner</h3><hr id="15470a82-496c-8189-a9fe-f36eeccb18f2"/><div id="15470a82-496c-8157-a57e-e8a774dfe326" class="column-list"><div id="15470a82-496c-81dd-ab89-d1a60ee35e97" style="width:25%" class="column"><h3 id="15470a82-496c-815f-a7ab-c18c6555876d" class="">Contact</h3><p id="15470a82-496c-81c5-9c38-eaf54e24162d" class="block-color-gray">Lalitpur, Nepal</p><p id="15470a82-496c-806b-af30-e20dfe30a2fb" class=""><a href="http://linkedin.com/in/sarojkoinfo">http://linkedin.com/in/sarojkoinfo</a></p><p id="15470a82-496c-806d-9ce5-dd129a180c65" class="">
+</p></div><div id="15470a82-496c-8154-ac3f-e45dc0390377" style="width:75%" class="column"><h3 id="15470a82-496c-8125-af16-fc2530b2d38d" class="">Profile</h3><p id="15470a82-496c-8095-8330-dbc070e51a03" class="">Results-driven Technical Lead/ Senior FullStack Developer with extensive experience in leading full stack development teams, designing system architectures, and implementing efficient technical solutions. Proven ability to manage technical resources, drive strategic initiatives, and enhance productivity through effective technical standards and practices. Adept at bridging the gap between technical and management teams to achieve organizational goals utilizing various Agile methodologies.</p></div></div><div id="15470a82-496c-816b-aa4e-d447d2b913a4" class="column-list"><div id="15470a82-496c-81f1-a968-f22581b4847c" style="width:25%" class="column"><hr id="15470a82-496c-8195-a642-e38bfcfecbf7"/><h3 id="15470a82-496c-81cd-b1c3-f3ae16e44f12" class="">Skills</h3><p id="15470a82-496c-81da-bf13-e71235068281" class="block-color-gray">FullStack Web Development</p><p id="15470a82-496c-81bf-a093-ce95c7de254d" class="">◾◾◾◾◾</p><p id="15470a82-496c-812d-999e-e23ea41c7368" class="block-color-gray">System Architecture Design &amp; Implementation</p><p id="15470a82-496c-81af-aee5-d25103339652" class="">◾◾◾◾◾</p><p id="15470a82-496c-8031-ba2e-e4d4a15b3db3" class="block-color-gray">Agile development </p><p id="15470a82-496c-8182-b3c8-f74ebc595440" class="">◾◾◾◾◾</p><p id="15470a82-496c-8181-a445-c8329fed19ce" class="block-color-gray">Technical Leadership &amp; People Management</p><p id="15470a82-496c-811c-8bd3-d5e739be3780" class="">◾◾◾◾◾</p><p id="15470a82-496c-8013-980e-d8406434ba7c" class="block-color-gray">Engineering Management</p><p id="15470a82-496c-805b-899a-dfff09b903f8" class="">◾◾◾◾</p><p id="15470a82-496c-80fb-8fb2-d3d2ce95b9ac" class="block-color-gray">CI/CD &amp; System Automation platforms</p><p id="15470a82-496c-80e1-8f83-edb0f53b3f71" class="">◾◾◾◾◾</p><p id="15470a82-496c-80cc-a174-c371af09babe" class="block-color-gray">PHP</p><p id="15470a82-496c-8075-9041-c44e3f409850" class="">◾◾◾◾◾</p><p id="15470a82-496c-80b4-b335-f1d83e8ba7be" class="block-color-gray">Javascript based platforms</p><p id="15470a82-496c-8079-9c63-e69f8256817e" class="">◾◾◾◾◾</p><p id="15470a82-496c-8029-8b5d-cfe69da83434" class="block-color-gray">Python</p><p id="15470a82-496c-8005-b2ab-e2b235f98372" class="">◾◾◾◾◾</p><p id="15470a82-496c-8018-8072-e45c1ff708d6" class="block-color-gray">AI development</p><p id="15470a82-496c-8045-9bbb-e1dcb078701d" class="">◾◾◾</p><p id="15470a82-496c-8091-9bfe-d25a61dbef40" class="block-color-gray">Cyber Security</p><p id="15470a82-496c-802a-91ad-c92e463d0d2e" class="">◾◾◾</p><hr id="15470a82-496c-8164-bb4f-ea619e519c18"/><h3 id="15470a82-496c-8118-b85d-d3d967c4771f" class="">Languages</h3><p id="15470a82-496c-81cc-a5fa-c07078c725bf" class=""><mark class="highlight-gray">English</mark></p><p id="15470a82-496c-81cf-810d-ce315a9c7054" class="">◾◾◾◾◾</p><p id="15470a82-496c-81b3-a3f6-ccacd1dda3a1" class="block-color-gray">Nepali</p><p id="15470a82-496c-81ad-ab1b-fb8ea1ed7057" class="">◾◾◾◾</p><hr id="15470a82-496c-816f-8e31-c0be8bf132cf"/><h3 id="15470a82-496c-817b-8304-ea3ccfdf3763" class="">Side Hustles</h3><p id="15470a82-496c-81ff-8a82-d960788c249b" class=""><mark class="highlight-gray"><strong>Personal Planning tool</strong></mark></p><ul id="15470a82-496c-8172-a458-f612c8ed37bf" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Personal planning &amp; project management tools as per PMP standard.</li></ul><ul id="15470a82-496c-81bd-a7ea-ca82f9c402dd" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Day &amp; Task Planner</li></ul><ul id="15470a82-496c-81c5-a67c-d97780dbe151" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Financial Planner</li></ul><hr id="15470a82-496c-8061-8f96-f5b4239afc73"/><p id="15470a82-496c-812f-84a5-c7936b77a921" class="block-color-gray"><strong><a href="http://blog.sarojligal.com.np">Technical Blog</a></strong></p><ul id="15470a82-496c-8094-b319-ca02cf4f0c21" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Knowledge Sharing</li></ul><ul id="15470a82-496c-803d-bc04-c5e662634bd8" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Study Notes</li></ul><ul id="15470a82-496c-80cf-9500-fea76c88b226" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Technical blog</li></ul><hr id="15470a82-496c-80d4-99d7-c7520f4cfee9"/><p id="15470a82-496c-80e4-a37f-e72615567fb6" class=""><mark class="highlight-gray">Freelance Development</mark></p><ul id="15470a82-496c-80a4-9a58-f4f57efa16c5" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray">Freelance websites</mark></li></ul><ul id="15470a82-496c-804b-bf9c-c64cf447f4bf" class="block-color-gray bulleted-list"><li style="list-style-type:disc">3rd party freelance HR companies</li></ul><hr id="15470a82-496c-80f1-82ce-d9b4801519aa"/><p id="15470a82-496c-8094-a0d9-f344018f946e" class="">
+</p></div><div id="15470a82-496c-8138-be77-e267e2cb55dd" style="width:75%" class="column"><hr id="15470a82-496c-81a6-a6d0-e6a3e61445c0"/><h3 id="15470a82-496c-815f-a505-da57db05683a" class="">Work Experience</h3><p id="15470a82-496c-81f8-b358-ecec955837ee" class=""><strong>Technical Lead | Team Lead | Senior FullStack Developer</strong></p><p id="15470a82-496c-8105-94c8-fdab152f58c2" class="block-color-gray">Diagonal Technologies Pvt. Ltd | Germany</p><p id="15470a82-496c-8160-838a-cb6acc6b242a" class="block-color-gray"><em>Aug 2020 - April 2024</em></p><ul id="15470a82-496c-8035-8534-e75c02e45a58" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Led a cross-functional team in the development of features and requests aligned with product goals.</li></ul><ul id="15470a82-496c-80fc-bfc0-c2e3dea29474" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Made key technical decisions and designed scalable system architectures.</li></ul><ul id="15470a82-496c-8037-a7b5-d9c29def26f4" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Managed technical resources and mentored team members to achieve project objectives.</li></ul><ul id="15470a82-496c-804b-b579-e882103f2f58" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Bridged the gap between technical and management teams, ensuring seamless communication and project alignment.</li></ul><ul id="15470a82-496c-80c6-a6d0-c936e1ac4905" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Converted feature definitions into detailed technical requirements and prioritized development tasks.</li></ul><ul id="15470a82-496c-8045-83ae-f8505cf85b35" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Implemented multi-language Micro Service architecture for Vehicle Tracking Services, enhancing system scalability.</li></ul><ul id="15470a82-496c-80e2-9b06-f3ca6095f43c" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Developed a Node based socket server service for vehicle tracking devices, improving data accuracy and efficiency.</li></ul><ul id="15470a82-496c-8047-9887-f8e3f94227fe" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Created organizational standards and technical manuals to improve productivity and technical proficiency.</li></ul><hr id="15470a82-496c-81fe-bedf-ccd183a3828b"/><p id="15470a82-496c-81d9-8f9c-fdade3168b18" class=""><strong>Team Lead | Senior FullStack Developer | Project Lead</strong></p><p id="15470a82-496c-817a-abc3-e35dd05242f5" class="block-color-gray">Diagonal Technologies Pvt. Ltd | Germany</p><p id="15470a82-496c-812e-adb0-de3a2431a750" class="block-color-gray"><em>Jan 2019 - Aug 2020</em></p><ul id="15470a82-496c-80ce-8de7-c389cbcc7cbe" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Led the development of key features for an Airline Tour Operator project using Adobe ColdFusion.</li></ul><ul id="15470a82-496c-80e5-aa78-e407501fdf50" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Designed and developed REST APIs and a React Redux-based system for managing startup funding.</li></ul><ul id="15470a82-496c-8063-b282-f9d14e791ad2" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Managed multiple project teams, ensuring timely delivery of project milestones.</li></ul><ul id="15470a82-496c-80cd-bc39-e3d3e918d0d3" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Collaborated closely with Project Managers and Product Owners to define project scope and priorities.</li></ul><ul id="15470a82-496c-80c8-b7c5-d6baaf21b63c" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Implemented AGILE methodologies to enhance code efficiency and maintain high-quality work standards.</li></ul><hr id="15470a82-496c-80e1-8515-e772263bf18a"/><p id="15470a82-496c-8057-aa93-f7c00c34f5d5" class=""><strong>Team Lead | Senior FullStack Developer</strong></p><p id="15470a82-496c-805d-82c2-d352538cb0b6" class="block-color-gray">Proshore | Kathmandu, Nepal</p><p id="15470a82-496c-8034-8a9d-ef8d44729b9a" class="block-color-gray"><em>Dec 2016 - Dec 2018</em></p><ul id="15470a82-496c-80f2-9a6c-e95c7604e166" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Directed the development of mobile REST APIs and performance optimization using REDIS caching.</li></ul><ul id="15470a82-496c-80c9-a2ee-c29e4004a57e" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Implemented Geo-fencing mechanisms and heat-maps for data mapping, enhancing data visualization.</li></ul><ul id="15470a82-496c-80f3-8cf7-f3f04eb2fc05" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Led the development of various modules for an e-commerce site using Laravel and Lumen frameworks.</li></ul><ul id="15470a82-496c-80b1-a279-d3ee59830960" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Integrated Google Firebase for project notifications, improving user engagement.</li></ul><ul id="15470a82-496c-80da-b1d4-f62e3c69b92e" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Spearheaded the implementation of new development practices to maximize code quality and delivery efficiency.</li></ul><hr id="15470a82-496c-80d5-bc20-f7a290d275fc"/><p id="15470a82-496c-80a3-b814-d361766f9770" class=""><strong>FullStack Developer</strong></p><p id="15470a82-496c-8074-9419-e2efaabe35f3" class="block-color-gray">Choobs Ltd. | Geneva, Switzerland</p><p id="15470a82-496c-8001-b187-f4d16df14e56" class="block-color-gray"><em>Jun 2012 - May 2015</em></p><ul id="15470a82-496c-8083-bb7b-c5b1da631d76" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Led the development and implementation of ICT Management, Planning, and Invoicing projects.</li></ul><ul id="15470a82-496c-8099-b182-dcff8e80ba9d" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Conducted project scope estimation, work planning, and post-implementation testing.</li></ul><ul id="15470a82-496c-80cc-889c-ddebc2bbf018" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Developed and deployed SOAP-based data synchronization for Symphony-based plugins.</li></ul><ul id="15470a82-496c-80bc-9eac-fb0cab14aa2f" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Worked with PHP, JQuery, JavaScript, HTML, CSS, MySQL, Symfony and Propel.</li></ul><hr id="15470a82-496c-8073-acfe-e299b428c83c"/><p id="15470a82-496c-803d-8ffa-d6e08f2ac21d" class="">Embedded Software Developer (Part-Time)</p><p id="15470a82-496c-80db-bc9d-c2b77a29eb98" class="block-color-gray">Projectronix | Nepal</p><p id="15470a82-496c-8090-91f3-f0b25ebee036" class="block-color-gray"><em>May 2011 - Jun 2012</em></p><ul id="15470a82-496c-805d-9164-d7f88e8d843c" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Developed GSM and GPS module-based tracking and route plotting systems.</li></ul><ul id="15470a82-496c-803e-9206-c540e9f41999" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Researched and implemented sound source direction selection using Arduino.</li></ul><ul id="15470a82-496c-80d3-b7fe-d058087708f3" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Contributed to Quad-copter research and development projects.</li></ul><hr id="15470a82-496c-8026-9f73-c4e1ddd60cd5"/><p id="15470a82-496c-8056-b1bd-cba8f1f2cad6" class=""><strong>FullStack Developer | Freelance</strong></p><p id="15470a82-496c-804b-b4a9-ef4c96bd687b" class="block-color-gray">Freelancing</p><p id="15470a82-496c-807a-8e68-f0d1da905d0c" class="block-color-gray"><em>April 2011 - Jun 2012</em></p><ul id="15470a82-496c-809e-861d-e897a7a2c1ee" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Developed web applications using PHP and PHP based Frameworks like Yii, Symfony, CodeIgniter, CakePHP as per client requirements.</li></ul><ul id="15470a82-496c-8005-9369-ec7300c6d3c4" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Worked on self replicating desktop applications development using C#, and <a href="http://vb.net/">VB.NET</a>.</li></ul><ul id="15470a82-496c-8036-8e91-d812cf2aab2c" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Worked on network analysis tool using VB.NET.</li></ul><ul id="15470a82-496c-8094-9d7a-f05f016e9761" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Worked on an enterprise application development in .NET framework.</li></ul><ul id="15470a82-496c-80f9-a98a-c834ee81dc28" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Worked on multiple e-commerce websites utilizing different frameworks.</li></ul><hr id="15470a82-496c-805d-be1c-e1bb1e712785"/><p id="15470a82-496c-8034-a2f5-e92aa463e759" class=""><strong>FullStack Developer | Research Programmer</strong></p><p id="15470a82-496c-80fd-9102-dc6da9f2dd59" class="block-color-gray">Extreme-Generation Pvt. Ltd | Nepal</p><p id="15470a82-496c-80a5-b967-d84851e19fd8" class="block-color-gray"><em>Aug 2010 - Jan 2011</em></p><ul id="15470a82-496c-80f8-917d-e1bd13aaab5b" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Developed web-based SMS delivery systems and bulk SMS marketing tools.</li></ul><ul id="15470a82-496c-8019-bfc9-d92120d91820" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Designed and developed APIs for third-party integrations with SMS gateways.</li></ul><ul id="15470a82-496c-8081-bb31-dedb0c6546ad" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray">Developed multiple portfolio websites for clients in different domains utilizing different PHP based frameworks.</mark></li></ul><ul id="15470a82-496c-8003-9f79-f0b82c78a86d" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Developed ecommerce websites utilizing multiple frameworks based on PHP</li></ul><hr id="15470a82-496c-815f-b2f9-c3f91fa3e11c"/><h3 id="15470a82-496c-817b-a074-ca0062ccea7e" class="">Education</h3><p id="15470a82-496c-816a-b8c3-eb28597092dc" class="block-color-gray">Kantipur Engineering College, TU affiliation (IOE)</p><p id="15470a82-496c-81af-9536-f76ceb61d731" class=""><mark class="highlight-gray">Bachelors in Computer Engineering, (Incomplete)</mark></p><hr id="15470a82-496c-81e4-a947-e6e146b548c6"/><p id="15470a82-496c-8056-ba11-f9c2ab7e28c7" class="block-color-gray">National Institute of Science (NIS Patan), HSEB </p><p id="15470a82-496c-80f6-9bfb-c99603126545" class=""><mark class="highlight-gray">High School (+2), 2062 BS</mark></p><hr id="15470a82-496c-805a-b3e4-c3e74bccd028"/><p id="15470a82-496c-8087-97d2-f9583e1dcab8" class="block-color-gray">Adarsha Vidya Mandir Higher Secondary School (AVM)</p><p id="15470a82-496c-80b8-be41-cf5e2d49a000" class="block-color-gray">School , 2060 BS</p></div></div><hr id="15470a82-496c-8110-9f2b-db6901f93792"/><h3 id="15470a82-496c-8046-b25b-dce4ffb0996b" class="">Courses and Training</h3><div id="15470a82-496c-8028-8c13-c9d0b1014c93" class="column-list"><div id="7c2f0cfa-8fbf-4b7e-859e-2fdee1899343" style="width:25%" class="column"><p id="48ceb68e-43a7-4d3b-aa8a-936cd434ea82" class="block-color-gray"><strong>Project Management, Leadership Tools &amp; Techniques</strong></p><hr id="15470a82-496c-8004-b2c4-fa424765e3f7"/><ul id="15470a82-496c-8057-a6fd-fd948c62604d" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Engineering Project Management Specialization - Rice University (Coursera)</li></ul><ul id="15470a82-496c-80bc-b652-fb876b954325" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Google Project Management: Professional Certificate - Google (Coursera)</li></ul><ul id="15470a82-496c-80c1-aa77-d961c0c6ca9e" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Creative Thinking: Techniques and Tools for Success - Imperial College London (Coursera)</li></ul><ul id="15470a82-496c-80f7-b045-f9e6ab8424eb" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Work Smarter, Not Harder: Time Management for Personal &amp; Professional Productivity -University of California (Coursera)</li></ul><ul id="15470a82-496c-802a-a7b7-f709a8697cc8" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Managing the Company of the Future - University of London (Coursera)</li></ul><ul id="15470a82-496c-807a-8f89-e0feb5345cbd" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Connected Leadership - Yale University (Coursera)</li></ul><hr id="15470a82-496c-80ba-8fa6-d3e71e8ead89"/></div><div id="68fbede9-862d-4dc8-8f8b-8b0b9b0b4de7" style="width:25%" class="column"><p id="9fac665c-a021-4581-ae4c-89d886950d15" class="block-color-gray"><strong>Artificial Intelligence </strong></p><hr id="15470a82-496c-8062-9f8e-ddd825f0c2d4"/><ul id="15470a82-496c-8001-9c6b-dbcd18b7778e" class="block-color-gray bulleted-list"><li style="list-style-type:disc">GenAI for Everyone - <br/>Fractal Analytics (Coursera)<br/></li></ul><ul id="15470a82-496c-8096-aa54-de0c7595098f" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Reinforcement Learning From Human Feedback (DeepLearning.AI)</li></ul><ul id="15470a82-496c-801c-85e1-fc51794b6e06" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Building AI Applications With Haystack (DeepLearning.AI)</li></ul><ul id="15470a82-496c-80d2-a48f-c2efe96b3339" class="block-color-gray bulleted-list"><li style="list-style-type:disc">LangChain for LLM Application Development (DeepLearning.AI)</li></ul><ul id="15470a82-496c-80c8-95f1-f89a1d892fa0" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Build LLM Apps with LangChain.js (DeepLearning.AI)</li></ul><ul id="15470a82-496c-8081-8d1d-cb79fd6c17cc" class="block-color-gray bulleted-list"><li style="list-style-type:disc">ChatGPT Prompt Engineering for Developers (DeepLearning.AI)</li></ul><ul id="15470a82-496c-804d-b5db-c8c2729caa05" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Build a computer vision app with Azure Cognitive Services (Coursera)</li></ul><hr id="15470a82-496c-80f3-aaba-fed3a961c0d5"/><p id="15470a82-496c-8009-955a-e6d2a23cec77" class="">
+</p></div><div id="3e4e3c72-82b7-4f6e-8aba-1c610516ecf3" style="width:25%" class="column"><p id="4aa00e51-5a23-427a-acc1-76ba84d703ad" class="block-color-gray"><strong>Cyber Security</strong></p><hr id="15470a82-496c-8010-a494-dac231b75b86"/><ul id="15470a82-496c-8042-84a0-e38bf27ba943" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Google Cybersecurity Professional Certificate - Google (Coursera)</li></ul><ul id="15470a82-496c-803a-a63b-ec97e24cea36" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Cybersecurity Fundamentals (IBM Skills Build)</li></ul><hr id="15470a82-496c-8073-9eff-edd9b532edcd"/><p id="15470a82-496c-8028-bc6b-c1ea9cd66192" class="block-color-gray"><strong>Cloud Computing</strong></p><hr id="15470a82-496c-80f9-8319-cb67789d99af"/><ul id="15470a82-496c-80c4-88ff-f6aaaa945412" class="block-color-gray bulleted-list"><li style="list-style-type:disc">AWS S3 Basics (Coursera)</li></ul><ul id="15470a82-496c-804c-82b3-dba08cac20a3" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Data Encryption using AWS KMS From UST (Coursera)</li></ul><ul id="15470a82-496c-8078-9661-e316d468b893" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Launch an auto-scaling AWS EC2 virtual machine (Coursera)</li></ul></div><div id="e66bc5d0-def1-49f3-9a96-8862e4f4df33" style="width:25%" class="column"><p id="da8dc622-2a46-47da-9869-2080e889c00b" class="block-color-gray"><strong>Entrepreneurship &amp; Brand Management</strong></p><hr id="15470a82-496c-806c-9213-f47fdafc7d04"/><ul id="15470a82-496c-8015-affb-cf3663daf7d6" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Business Essentials: From Registration to Compliance (Merojob.com)</li></ul><ul id="15470a82-496c-802e-bae2-e7b28b9bd46b" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Introduction to Negotiation: A Strategic Playbook for Becoming a Principled and Persuasive Negotiator - Yale University (Coursera)</li></ul><ul id="15470a82-496c-8085-83c2-c64fc4602d9e" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Digital Marketing Strategy with Goldman Sachs (Coursera.org)</li></ul><ul id="15470a82-496c-8063-bbb8-f4da8dc6be30" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Introduction to Personal Branding - University of Virginia (Coursera)</li></ul><ul id="15470a82-496c-80fc-a25f-c772945060d1" class="block-color-gray bulleted-list"><li style="list-style-type:disc">How to Optimize Your Instagram Account </li></ul><ul id="15470a82-496c-80af-8d2b-de9876cdeef3" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Building a Business Presence With Facebook Marketing</li></ul><ul id="15470a82-496c-8001-8918-eb262ef64ae5" class="block-color-gray bulleted-list"><li style="list-style-type:disc">The Art of Storytelling<br/> - IESE Business School (Coursera)<br/></li></ul><ul id="15470a82-496c-8026-96f1-e3902d4e2fa5" class="block-color-gray bulleted-list"><li style="list-style-type:disc">Use Canva to Create Desktop and Mobile-friendly Web Pages.</li></ul><hr id="15470a82-496c-804a-8e01-e212bf44b13c"/><p id="15470a82-496c-8017-b7e5-ceb1ab90f792" class="">
+</p></div></div><hr id="15470a82-496c-8193-8b1c-f88eed3bd052"/><div id="15470a82-496c-8036-b90f-f096298b7a55" class="column-list"><div id="38882d6f-95d1-4e7e-8e6b-512327cfd0e7" style="width:33.33333333333333%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="15470a82-496c-8045-a790-db595cd65dad"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/feed_blue.svg"/></div><div style="width:100%"><ul id="15470a82-496c-80c4-9926-e70551d12f92" class="toggle"><li><details open=""><summary>Links</summary><ul id="15470a82-496c-807d-b387-c86bdba771e4" class="bulleted-list"><li style="list-style-type:disc"><a href="https://blog.sarojligal.com.np/">Blog</a></li></ul><ul id="15470a82-496c-80dc-bbb9-d74afee6fb69" class="bulleted-list"><li style="list-style-type:disc"><a href="http://linkedin.com/in/sarojkoinfo">LinkedIn</a></li></ul></details></li></ul></div></figure><p id="0e64ee90-8aee-4785-84ff-8a677ff4253a" class="">
+</p></div><div id="75582c6f-43da-4463-9aa8-1265165ef063" style="width:33.33333333333333%" class="column"><p id="da51a714-a12a-4e4a-ad87-e080086c81b2" class="">
+</p></div><div id="1abca5e1-9837-4308-a6fa-e60a55a314f3" style="width:33.33333333333333%" class="column"><p id="ef757193-5582-4211-bb06-463e103b7d8c" class="">
+</p></div></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
